@@ -1,0 +1,9 @@
+<button (click)="newGame()">Start!</button>
+
+<div class="test">
+<cell-box *ngFor="let val of cells; let i = index"
+[content]="val"
+(click)="playerChange(i)">
+</cell-box>
+</div>
+
